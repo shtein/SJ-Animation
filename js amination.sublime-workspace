@@ -1,0 +1,695 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"getA",
+				"getAbsVelocity"
+			],
+			[
+				"get",
+				"getAbsVelocity"
+			],
+			[
+				"GetAb",
+				"getAbsVelocity"
+			],
+			[
+				"rot",
+				"rotMtx"
+			],
+			[
+				"arr",
+				"arrCS"
+			],
+			[
+				"Le",
+				"length"
+			],
+			[
+				"d",
+				"drawSC"
+			],
+			[
+				"dw",
+				"drawStatic"
+			],
+			[
+				"move",
+				"moveRule"
+			],
+			[
+				"Seg",
+				"segment"
+			],
+			[
+				"pro",
+				"prototype"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 4954,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/screen.js",
+			"settings":
+			{
+				"buffer_size": 3141,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/object.js",
+			"settings":
+			{
+				"buffer_size": 107,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/flobj.js",
+			"settings":
+			{
+				"buffer_size": 3791,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/polygon.js",
+			"settings":
+			{
+				"buffer_size": 1079,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/move.js",
+			"settings":
+			{
+				"buffer_size": 1852,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/coordsystem.js",
+			"settings":
+			{
+				"buffer_size": 2892,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/circle.js",
+			"settings":
+			{
+				"buffer_size": 1723,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/pnt.js",
+			"settings":
+			{
+				"buffer_size": 2336,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/segment.js",
+			"settings":
+			{
+				"buffer_size": 3283,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/staticcontent.js",
+			"settings":
+			{
+				"buffer_size": 414,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/line.js",
+			"settings":
+			{
+				"buffer_size": 607,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/utils.js",
+			"settings":
+			{
+				"buffer_size": 1327,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/chrome.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/alexs/My Experiments/js animation/js/utills.js",
+		"/Users/alexs/My Experiments/js animation/js/swingingsegment.js",
+		"/Users/alexs/Library/Application Support/Sublime Text 2/Packages/User/chrome.sublime-build",
+		"/Users/alexs/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/Users/alexs/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/alexs/Library/Application Support/Sublime Text 2/Packages/User/shell.sublime-build",
+		"/Users/alexs/Documents/OpenVPN/zoo.tblk/client.ovpn",
+		"/Users/alexs/Library/Application Support/Google/Chrome/Local State"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";\n",
+			"loop",
+			"matrix",
+			"calcn",
+			"norma",
+			"line",
+			"iter",
+			"шеук",
+			"velocity",
+			");\n",
+			"phone2",
+			"screen",
+			"curS",
+			"seg",
+			"calcNormal",
+			"Math",
+			"mtx",
+			"mx",
+			"mass",
+			"norma",
+			"protocol",
+			"magne",
+			"file",
+			"Protocol"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 4954,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1635,
+								1635
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 495.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/screen.js",
+					"settings":
+					{
+						"buffer_size": 3141,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2520,
+								2520
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1084.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/object.js",
+					"settings":
+					{
+						"buffer_size": 107,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								58,
+								58
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/flobj.js",
+					"settings":
+					{
+						"buffer_size": 3791,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								542,
+								542
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/polygon.js",
+					"settings":
+					{
+						"buffer_size": 1079,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1070,
+								1070
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "js/move.js",
+					"settings":
+					{
+						"buffer_size": 1852,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								263,
+								263
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "js/coordsystem.js",
+					"settings":
+					{
+						"buffer_size": 2892,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								283,
+								283
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "js/circle.js",
+					"settings":
+					{
+						"buffer_size": 1723,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 246.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "js/pnt.js",
+					"settings":
+					{
+						"buffer_size": 2336,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								967,
+								976
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 923.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "js/segment.js",
+					"settings":
+					{
+						"buffer_size": 3283,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2282,
+								2282
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1167.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "js/staticcontent.js",
+					"settings":
+					{
+						"buffer_size": 414,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								414,
+								414
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "js/line.js",
+					"settings":
+					{
+						"buffer_size": 607,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								177,
+								177
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "js/utils.js",
+					"settings":
+					{
+						"buffer_size": 1327,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								715,
+								1324
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 224.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 215.0,
+	"status_bar_visible": true
+}

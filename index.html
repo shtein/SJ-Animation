@@ -1,0 +1,162 @@
+<html>
+<head>
+<title>JavaScript Animation</title>
+<script type="text/javascript" src="js/inherits.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/object.js"></script>
+<script type="text/javascript" src="js/pnt.js"></script>
+<script type="text/javascript" src="js/line.js"></script>
+<script type="text/javascript" src="js/coordsystem.js"></script>
+<script type="text/javascript" src="js/segment.js"></script>
+<script type="text/javascript" src="js/polygon.js"></script>
+<script type="text/javascript" src="js/circle.js"></script>
+<script type="text/javascript" src="js/flobj.js"></script>
+<script type="text/javascript" src="js/move.js"></script>
+<script type="text/javascript" src="js/screen.js"></script>
+<script type="text/javascript" src="js/screenstatic.js"></script>
+<script type="text/javascript" src="js/staticcontent.js"></script>
+<script type="text/javascript">
+
+
+
+var App = (function(){
+    var timer       = null;  //timer
+    var screen      = null;  //canvas
+
+       //events
+     function resize() {
+        screen.resize();
+     }
+    
+    function draw(){
+         screen.draw();
+         requestAnimationFrame(draw);
+    }
+
+    function loop(){
+         screen.loop();
+         timer = setTimeout(loop, 3); 
+    }
+
+
+    return {
+      
+       init: function(){
+          var move =   new MoveGravity(); //new MoveGravityPoint({x:700, y:350}, 60, 700);  //new MoveLinear();
+
+
+          var moveCSTest1 = (function(data, ms){
+
+             //Check if it is init
+            if(data == null){
+              return new Position(new Pnt(500, 200), new Pnt(0.1, 0), 0,  Math.PI/3000);
+            }
+
+            //Check bounds
+            if (data.p.x < 100 || data.p.x > 500)
+              data.v.x = -data.v.x;
+
+            //Update coordintaes
+            data.p.x = data.p.x + ms * data.v.x;
+            data.p.y = data.p.y + ms * data.v.y;
+
+            //Check angle
+            if(data.a > Math.PI/4 || data.a < -Math.PI/4)
+              data.w = -data.w;
+
+            data.a = data.a + data.w * ms;
+
+            return data;
+          });
+
+
+          var moveCSTest2 = (function(data, ms){
+
+             //Check if it is init
+            if(data == null){
+              return new Position(new Pnt(0, 200), new Pnt(0, 0), 0,  -Math.PI/3000);
+            }
+
+          if(data.a > Math.PI/2 || data.a < -Math.PI/3)
+              data.w = -data.w;
+
+            data.a = data.a + data.w * ms;
+
+            return data;           
+          });
+           
+          //create screen  
+          screen = new Screen(document.getElementById('canvas'), move, false);
+          //add standalone segments to screen
+          //screen.addStaticContent(scrStatic);
+          //screen.addStaticObject(move.getCircle());
+
+          var cs1 = new CoordSystem(null, moveCSTest1);          
+          var seg1 = new Segment({x:0, y:0}, {x:0, y:200}); 
+          screen.addStaticObject(seg1, cs1);
+
+          //screen.addStaticObject(new Segment({x:250, y:300}, {x:100, y:500}));
+          var cs2 = new CoordSystem(cs1, moveCSTest2); 
+          var seg2 = new Segment({x:0, y:0}, {x:0, y:200});           
+          screen.addStaticObject(seg2, cs2);
+
+        
+          //add flying objects
+          //screen.addFlObj(new FlyingObj({x:5, y:5}, 35, {x:0.015, y: 0}, document.getElementById('sofia')));
+          //screen.addFlObj(new FlyingObj({x:10, y:100}, 30, {x:0.5, y: 0.05},document.getElementById('sasha')));
+          //screen.addFlObj(new FlyingObj({x:400, y:350}, 25, {x:0, y: 0.01}, document.getElementById('yulia')));
+
+          screen.addFlObj(new FlyingObj({x:700, y:400}, 45, {x:0.5, y: 0.01}, document.getElementById('sv')));
+          screen.addFlObj(new FlyingObj({x:100, y:100}, 45, {x:-1, y: 0.01}, document.getElementById('ir')));
+
+          //resize event
+          window.addEventListener('resize', function(){resize();}, false);                 
+           
+          //draw 
+          requestAnimationFrame( function(){draw(); });
+  
+      },            
+      
+
+      start: function(){
+         if(!timer)
+           timer = setTimeout(function(){loop()}, 3); 
+      },
+    
+      stop: function(){
+         clearTimeout(timer); 
+         timer = null;
+      },      
+ 
+      step: function(){
+        screen.loop();
+      },      
+                     
+   }; 
+  
+})();
+
+
+
+
+
+
+window.onload = App.init;
+//-->
+</script>
+<body>
+<form >
+<input type="button" value="Start" onclick="App.start();" />
+<input type="button" value="Stop" onclick="App.stop();" />
+<input type="button" value="Step" onclick="App.step();" />
+</form>
+<div id = "extBorder" style="position:relative; width:100%;height:95%; ">
+<canvas id="canvas" style="position:absolute; "/>
+<image id = "sofia" src="img/sofia.png">
+<image id = "sasha" src="img/sasha.png">
+<image id = "yulia" src="img/yulia.png">
+<image id = "ir" src="img/igor.png">
+<image id = "sv" src="img/sv.jpg">
+</div>
+</body>
+</html>
